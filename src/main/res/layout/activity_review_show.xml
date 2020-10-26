@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0047ab">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="리뷰 상세"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="80dp"
+            android:gravity="left">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <GridView
+        android:id="@+id/gridview_2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/toolbar_2"
+        android:numColumns="2"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp">
+
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/line_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridview_2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="맛"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#454C53">
+
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/tv_8_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:nextFocusRight="@id/tv_8">
+
+        </RatingBar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line_6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가격"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#454C53">
+
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/tv_9_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:nextFocusRight="@id/tv_9" >
+
+        </RatingBar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line_7"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="분위기"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#454C53">
+
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/tv_10_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:nextFocusRight="@id/tv_10" >
+
+        </RatingBar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line_8"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#454C53">
+
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/tv_11_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:nextFocusRight="@id/tv_11" >
+
+        </RatingBar>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/line_9"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="한줄평"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#454C53">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/tv_12">
+
+        </EditText>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
