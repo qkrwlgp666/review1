@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar_write"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0047ab">
@@ -29,17 +29,17 @@
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
-        android:id="@+id/line_1"
+        android:id="@+id/line_write_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
+        android:layout_below="@+id/toolbar_write"
         android:layout_marginTop="0dp"
         android:orientation="vertical"
         android:gravity="center"
         android:padding="10dp">
 
         <TextView
-            android:id="@+id/tv_1"
+            android:id="@+id/w_tv_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="닉네임"
@@ -50,7 +50,7 @@
         </TextView>
 
         <TextView
-            android:id="@+id/tv_2"
+            android:id="@+id/w_tv_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="가게는 어떠셨나요?"
@@ -63,16 +63,16 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/line_2"
+        android:id="@+id/line_write_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/line_1"
+        android:layout_below="@+id/line_write_1"
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_marginTop="10dp">
 
         <TextView
-            android:id="@+id/tv_3"
+            android:id="@+id/w_tv_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="맛"
@@ -83,25 +83,25 @@
         </TextView>
 
         <RatingBar
-            android:id="@+id/tv_3_star"
+            android:id="@+id/w_tv_3_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:nextFocusRight="@id/tv_3">
+            android:nextFocusRight="@id/w_tv_3">
 
         </RatingBar>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/line_3"
+        android:id="@+id/line_write_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/line_2"
+        android:layout_below="@+id/line_write_2"
         android:gravity="center">
 
         <TextView
-            android:id="@+id/tv_4"
+            android:id="@+id/w_tv_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="가격"
@@ -112,25 +112,25 @@
         </TextView>
 
         <RatingBar
-            android:id="@+id/tv_4_star"
+            android:id="@+id/w_tv_4_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:nextFocusRight="@id/tv_4" >
+            android:nextFocusRight="@id/w_tv_4" >
 
         </RatingBar>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/line_4"
+        android:id="@+id/line_write_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/line_3"
+        android:layout_below="@+id/line_write_3"
         android:gravity="center">
 
         <TextView
-            android:id="@+id/tv_5"
+            android:id="@+id/w_tv_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="분위기"
@@ -141,26 +141,26 @@
         </TextView>
 
         <RatingBar
-            android:id="@+id/tv_5_star"
+            android:id="@+id/w_tv_5_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:nextFocusRight="@id/tv_5" >
+            android:nextFocusRight="@id/w_tv_5" >
 
         </RatingBar>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/line_5"
+        android:id="@+id/line_write_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/line_4"
+        android:layout_below="@+id/line_write_4"
         android:gravity="center"
         android:layout_marginBottom="20dp">
 
         <TextView
-            android:id="@+id/tv_6"
+            android:id="@+id/w_tv_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="서비스"
@@ -171,23 +171,23 @@
         </TextView>
 
         <RatingBar
-            android:id="@+id/tv_6_star"
+            android:id="@+id/w_tv_6_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:nextFocusRight="@id/tv_6" >
+            android:nextFocusRight="@id/w_tv_6" >
 
         </RatingBar>
 
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/relative_2"
+        android:id="@+id/relative_write_1"
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:layout_below="@id/line_5" >
+        android:layout_below="@id/line_write_5" >
 
         <TextView
-            android:id="@+id/tv_7"
+            android:id="@+id/w_tv_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="한줄평"
@@ -199,10 +199,10 @@
         </TextView>
 
         <EditText
-            android:id="@+id/et_1"
+            android:id="@+id/w_et_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/tv_7"
+            android:layout_toRightOf="@+id/w_tv_7"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="15dp">
 
@@ -214,7 +214,7 @@
         android:id="@+id/gridview_1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/relative_2"
+        android:layout_below="@+id/relative_write_1"
         android:numColumns="2"
         android:horizontalSpacing="5dp"
         android:verticalSpacing="5dp" >

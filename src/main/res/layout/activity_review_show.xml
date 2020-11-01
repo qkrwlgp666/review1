@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_2"
+        android:id="@+id/toolbar_show"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0047ab">
@@ -32,7 +32,7 @@
         android:id="@+id/gridview_2"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_below="@+id/toolbar_2"
+        android:layout_below="@+id/toolbar_show"
         android:numColumns="2"
         android:horizontalSpacing="5dp"
         android:verticalSpacing="5dp">
@@ -40,7 +40,7 @@
     </GridView>
 
     <LinearLayout
-        android:id="@+id/line_6"
+        android:id="@+id/line_show_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/gridview_2"
@@ -49,7 +49,7 @@
         android:layout_marginTop="10dp">
 
         <TextView
-            android:id="@+id/tv_8"
+            android:id="@+id/s_tv_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="맛"
@@ -60,25 +60,25 @@
         </TextView>
 
         <RatingBar
-            android:id="@+id/tv_8_star"
+            android:id="@+id/s_tv_1_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:nextFocusRight="@id/tv_8">
+            android:nextFocusRight="@id/s_tv_1">
 
         </RatingBar>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/line_7"
+        android:id="@+id/line_show_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/line_6"
+        android:layout_below="@+id/line_show_1"
         android:gravity="center">
 
         <TextView
-            android:id="@+id/tv_9"
+            android:id="@+id/s_tv_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="가격"
@@ -89,25 +89,25 @@
         </TextView>
 
         <RatingBar
-            android:id="@+id/tv_9_star"
+            android:id="@+id/s_tv_2_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:nextFocusRight="@id/tv_9" >
+            android:nextFocusRight="@id/s_tv_2" >
 
         </RatingBar>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/line_8"
+        android:id="@+id/line_show_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/line_7"
+        android:layout_below="@+id/line_show_2"
         android:gravity="center">
 
         <TextView
-            android:id="@+id/tv_10"
+            android:id="@+id/s_tv_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="분위기"
@@ -118,26 +118,26 @@
         </TextView>
 
         <RatingBar
-            android:id="@+id/tv_10_star"
+            android:id="@+id/s_tv_3_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:nextFocusRight="@id/tv_10" >
+            android:nextFocusRight="@id/s_tv_3" >
 
         </RatingBar>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/line_9"
+        android:id="@+id/line_show_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/line_8"
+        android:layout_below="@+id/line_show_3"
         android:gravity="center"
         android:layout_marginBottom="20dp">
 
         <TextView
-            android:id="@+id/tv_11"
+            android:id="@+id/s_tv_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="서비스"
@@ -148,24 +148,24 @@
         </TextView>
 
         <RatingBar
-            android:id="@+id/tv_11_star"
+            android:id="@+id/s_tv_4_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:nextFocusRight="@id/tv_11" >
+            android:nextFocusRight="@id/s_tv_4" >
 
         </RatingBar>
 
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/relative_3"
+        android:id="@+id/relative_show_1"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_below="@id/line_9"
+        android:layout_below="@id/line_show_4"
         android:layout_alignParentBottom="true">
 
         <TextView
-            android:id="@+id/tv_12"
+            android:id="@+id/s_tv_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -177,19 +177,14 @@
         </TextView>
 
         <EditText
-            android:id="@+id/et_2"
+            android:id="@+id/s_et_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:layout_toRightOf="@+id/tv_12">
+            android:layout_toRightOf="@+id/s_tv_5">
 
         </EditText>
 
     </RelativeLayout>
-
-
-
-
-
 
 </RelativeLayout>

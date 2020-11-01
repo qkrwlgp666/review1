@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_2"
+        android:id="@+id/toolbar_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center">
@@ -25,17 +25,9 @@
     <ListView
         android:id="@+id/listview_1"
         android:layout_width="match_parent"
-        android:layout_height="630dp"
-        android:layout_below="@+id/toolbar_2">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_list">
 
     </ListView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/listview_1" >
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
 
 </RelativeLayout>
