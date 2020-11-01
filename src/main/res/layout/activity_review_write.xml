@@ -211,7 +211,7 @@
     </RelativeLayout>
 
     <GridView
-        android:id="@+id/gridview_1"
+        android:id="@+id/gridview_w"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/relative_write_1"
@@ -220,10 +220,5 @@
         android:verticalSpacing="5dp" >
 
     </GridView>
-
-
-
-
-
 
 </RelativeLayout>
